@@ -13,3 +13,11 @@ y = 1./x-1./(x-1)+1./(x-2);
 plot(x,y);
 grid on
 
+phi = -3*pi:.01:3*pi;
+a = 2;
+b = 1;
+c = 1;
+x = a.*(b.*cos(phi)+phi.*sin(phi));
+y = a.*(sin(phi)-c.*phi.*cos(phi));
+plot(x,y);
+grid on
