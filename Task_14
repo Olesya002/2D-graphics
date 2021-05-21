@@ -1,0 +1,25 @@
+% улитка Паскаля
+phi = 0:.01:2*pi;
+a = 6;
+b = 3;
+x = a.*(cos(2.*phi))+b.*cos(phi);
+y = a.*(cos(phi).*sin(phi))+b.*sin(phi);
+plot(x,y);
+grid on
+
+% лемниската Бернулли
+t = -100:.01:100;
+a = 3;
+x = a*(t+t.^3)./(t.^4+1);
+y = a*(t-t.^3)./(t.^4+1);
+plot(x,y,'r')
+grid on
+
+% нефроида
+teta = -5*pi:.01:5*pi;
+r = 6.3;
+a = 6.3;
+x = 3*r*cos(teta) - r*cos(a+3*teta);
+y = 3*r*sin(teta) - r*sin(a+3*teta);
+plot(x,y,'g')
+grid on
