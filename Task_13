@@ -1,0 +1,15 @@
+phi = -3*pi:0.01:3*pi;
+n = 2; m = 2; 
+x = cos(n*phi).*(cos(phi)).^m;
+y = sin(n*phi).*(sin(phi)).^m;
+plot(x,y);
+xlabel('x')
+ylabel('y')
+grid on
+
+
+x = -10:.1:10;
+y = 1./x-1./(x-1)+1./(x-2);
+plot(x,y);
+grid on
+
